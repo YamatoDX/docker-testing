@@ -10,9 +10,10 @@ app.get("/", (req, res) => {
     name: "shadman",
     age: 20,
     profession: "web developer",
+    programmingLanguages: JSON.stringify(["JS", "TS"]),
   });
 });
 
 app.listen(4000, () => {
-  console.log("listening to PORT 4000");
+  console.log("listening to PORT 4000, oke!");
 });
