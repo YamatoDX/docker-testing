@@ -6,6 +6,8 @@ COPY package.json .
 
 RUN yarn install
 
+# above codes will try best to cache the image layers
+
 COPY . .
 
 EXPOSE 4000
